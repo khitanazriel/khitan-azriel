@@ -1,0 +1,1 @@
+Upload foto Anda sendiri ke folder ini, misalnya azriel.jpg, bg.jpg, logo.png
