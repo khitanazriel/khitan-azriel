@@ -14,4 +14,11 @@ setInterval(function(){
  document.getElementById('hours').innerHTML = Math.max(0, Math.floor((distance%(1000*60*60*24))/(1000*60*60)));
  document.getElementById('minutes').innerHTML = Math.max(0, Math.floor((distance%(1000*60*60))/(1000*60)));
  document.getElementById('seconds').innerHTML = Math.max(0, Math.floor((distance%(1000*60))/1000));
+ document.addEventListener("click", function () {
+    const music = document.getElementById("music");
+
+    if (music && music.paused) {
+        music.play();
+    }
+}, { once: true });
 },1000);
